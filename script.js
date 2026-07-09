@@ -6,5 +6,5 @@ openBtn.addEventListener('click',()=>{
   cover.classList.add('hide');
   music.volume=.72;
   music.play().catch(()=>{});
-  setTimeout(()=>document.getElementById('inicio').scrollIntoView({behavior:'smooth'}),300);
+  setTimeout(()=>document.getElementById('inicio').scrollIntoView({behavior:'smooth'}),320);
 });
