@@ -1,12 +1,10 @@
-const cover = document.getElementById('cover');
-const openBtn = document.getElementById('openBtn');
-const music = document.getElementById('music');
+const cover=document.getElementById('cover');
+const openBtn=document.getElementById('openBtn');
+const music=document.getElementById('music');
 
-openBtn.addEventListener('click', () => {
+openBtn.addEventListener('click',()=>{
   cover.classList.add('hide');
-  music.volume = 0.72;
-  music.play().catch(() => {});
-  setTimeout(() => {
-    document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });
-  }, 280);
+  music.volume=.72;
+  music.play().catch(()=>{});
+  setTimeout(()=>document.getElementById('inicio').scrollIntoView({behavior:'smooth'}),300);
 });
